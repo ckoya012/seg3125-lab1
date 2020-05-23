@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Website Design Survey</title>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+  <header id="pageTitle">
+    <h1>Website Design Survey</h1>
+  </header>
+
+  <div id="container">
+    <!-- BoC Image -->
+    <a href="https://www.bankofcanada.ca" id="bocLink">
+      <img src="homepage.png" title="Click here to visit the Bank of Canada website" />
+      <p id="bocLinkText">Click here to visit the Bank of Canada website</p>
+    </a>
+
+    <form>
+      <!-- Radio buttons -->
+      <label for="simplicity">Do you think the website is simple or overly complicated to use?</label><br>
+
+      <input type="radio" id="uniInterest1" name="uniInterest" value="friends">
+      <label class="form-check-label" for="simplicity">Simple</label><br>
+
+      <input type="radio" id="uniInterest1" name="uniInterest" value="friends">
+      <label class="form-check-label" for="simplicity">Complicated</label><br>
+
+      <!-- Text -->
+      <label for="layoutOpinion">Do you think the layout of the site attracts you to learn more information? If so, please explain why.</label><br>
+      <textarea id="layoutOpinion" name="layoutOpinion" rows="2" cols="53"></textarea><br>
+
+      <!-- Multiple checkboxes -->
+      <label for="designAspects">Which of the following did you like most about the website's design?</label><br>
+
+      <input type="checkbox" id="colour" name="colour" value="colour">
+      <label class="form-check-label" for="designAspects">Colour scheme</label><br>
+
+      <input type="checkbox" id="aesthetic" name="aesthetic" value="aesthetic">
+      <label class="form-check-label" for="designAspects">Aesthetic design</label><br>
+
+      <input type="checkbox" id="typography" name="typography" value="typography">
+      <label class="form-check-label" for="designAspects">Typography</label><br>
+
+      <input type="checkbox" id="functionality" name="functionality" value="functionality">
+      <label class="form-check-label" for="designAspects">Functionality</label><br>
+
+      <input type="checkbox" id="navigation" name="navigation" value="navigation">
+      <label class="form-check-label" for="designAspects">Effective navigation</label><br>
+
+      <input type="checkbox" id="layout" name="layout" value="layout">
+      <label class="form-check-label" for="designAspects">Consistent page layouts</label><br>
+
+      <!-- Dropdown  -->
+      <label for="leastFave">Please select your least favourite aspect of the design.</label><br>
+      <select id="leastFave">
+        <option value="Colour Scheme">Colour Scheme</option>
+        <option value="Aesthetics">Aesthetics</option>
+        <option value="Typography">Typography</option>
+        <option value="Functionality">Functionality</option>
+        <option value="Navigation">Navigation</option>
+        <option value="Page layouts">Page layouts</option>
+      </select><br>
+
+      <!-- Comments -->
+      <label for="comments">Do you have any improvements or suggestions for the site?</label><br>
+      <textarea name="comment" form="comments" rows="4" cols="53"></textarea><br>
+
+      <!-- Likert scale -->
+      <label for="navigationRating">On a scale of 1 to 5, how easily were you able to navigate through the site?</label><br>
+      <div id="sliderContainer">
+        <span float="right">1</span>
+        <input type="range" min="1" max="5" value="3" class="slider">
+        <span float="left">5</span>
+      </div><br>
+
+      <!-- Submit button -->
+      <button type="submit" class="btn btn-primary" id="submitBtn">Submit</button>
+
+    </form>
+  </div>
+</body>
+
+<footer>
+  <p>Website designed by <b>Charita Koya</b></p>
+</footer>
+
+</html>
